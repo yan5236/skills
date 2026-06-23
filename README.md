@@ -87,4 +87,22 @@ skills/
 
 ## 安装与使用
 
+### 一键安装
+
+安装全部技能：
+
+```bash
+npx skills add https://github.com/yan5236/skills
+```
+
+安装单个技能（通过 `--skill` 指定技能名）：
+
+```bash
+npx skills add https://github.com/yan5236/skills --skill decoupling-discipline
+```
+
+可选技能名：`decoupling-discipline`、`development-standards`、`spec-driven-development`、`super-review`、`project-memory`、`novel-writing`、`outline-creation`、`character-design`、`content-writing`。
+
+### 手动加载
+
 将 `skills/` 下任意子目录作为技能目录加载到支持 SKILL.md 规范的 AI 编码助手中即可。每个技能目录内的 `SKILL.md` 是入口文件，`assets/` 存放模板，`scripts/` 存放辅助脚本。
